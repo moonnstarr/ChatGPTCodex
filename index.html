@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NexaSocial Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="aurora"></div>
+    <main class="app-shell">
+      <aside class="sidebar glass-card">
+        <div class="brand">
+          <div class="brand-orb"></div>
+          <div>
+            <h1>NexaSocial</h1>
+            <p>AI Content Command Center</p>
+          </div>
+        </div>
+
+        <nav>
+          <button class="nav-btn active">Campaign Studio</button>
+          <button class="nav-btn">Writer Intelligence</button>
+          <button class="nav-btn">Viral Image Lab</button>
+          <button class="nav-btn">Performance Insights</button>
+        </nav>
+
+        <section class="sidebar-section">
+          <h2>Agent Health</h2>
+          <div class="health-grid">
+            <article>
+              <span>Research Agent</span>
+              <strong>Online</strong>
+            </article>
+            <article>
+              <span>Style Agent</span>
+              <strong>Learning</strong>
+            </article>
+            <article>
+              <span>Image Agent</span>
+              <strong>Generating</strong>
+            </article>
+          </div>
+        </section>
+      </aside>
+
+      <section class="workspace">
+        <header class="workspace-header glass-card">
+          <div>
+            <p class="eyebrow">Enterprise Social Engine</p>
+            <h2>Build human-feeling social content at scale</h2>
+            <p>
+              Input your niche, let AI agents analyze top creators, and generate channel-ready posts plus
+              high-virality image plans.
+            </p>
+          </div>
+          <div class="actions">
+            <button id="analyzeBtn" class="btn secondary">Run niche analysis</button>
+            <button id="generateBtn" class="btn primary">Generate campaign</button>
+          </div>
+        </header>
+
+        <section class="input-panel glass-card">
+          <div class="input-group">
+            <label for="niche">Industry or niche</label>
+            <input id="niche" type="text" placeholder="e.g. luxury skincare for women 40+" />
+          </div>
+          <div class="input-group">
+            <label for="audience">Primary audience</label>
+            <input id="audience" type="text" placeholder="e.g. founders, creators, agency owners" />
+          </div>
+          <div class="input-group full">
+            <label for="goal">Campaign goal</label>
+            <textarea id="goal" rows="3" placeholder="e.g. promote webinar registrations while sounding premium and expert"></textarea>
+          </div>
+        </section>
+
+        <section class="agent-grid">
+          <article class="glass-card agent-card">
+            <h3>Writer Discovery Agent</h3>
+            <p>Finds top-performing writers in your niche and maps voice, hook patterns, and narrative flow.</p>
+            <ul>
+              <li>Collects top post structures</li>
+              <li>Analyzes emotional triggers</li>
+              <li>Builds style blueprint</li>
+            </ul>
+          </article>
+          <article class="glass-card agent-card">
+            <h3>Content Composer Agent</h3>
+            <p>Writes platform-native posts that feel naturally human while matching your brand perspective.</p>
+            <ul>
+              <li>LinkedIn thought leadership</li>
+              <li>Instagram story-driven captioning</li>
+              <li>Facebook conversational engagement</li>
+            </ul>
+          </article>
+          <article class="glass-card agent-card">
+            <h3>Viral Visual Agent</h3>
+            <p>Studies high-performing visuals and proposes realistic HD image directions designed for engagement.</p>
+            <ul>
+              <li>Scene and mood recommendations</li>
+              <li>Lighting and lens details</li>
+              <li>Prompt-ready production briefs</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="outputs glass-card">
+          <div class="tabs" id="tabs">
+            <button class="tab active" data-platform="linkedin">LinkedIn</button>
+            <button class="tab" data-platform="instagram">Instagram</button>
+            <button class="tab" data-platform="facebook">Facebook</button>
+            <button class="tab" data-platform="x">X</button>
+          </div>
+          <article id="postOutput" class="output-copy"></article>
+          <article id="imageOutput" class="image-brief"></article>
+        </section>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
